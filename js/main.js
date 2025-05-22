@@ -138,7 +138,15 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       resume: {
         title: "Resume",
-        body: "<p>Check out my resume <a href='resume.pdf' target='_blank'>here</a>.</p>",
+        body: `
+  <div style="max-height:15rem; overflow-y: auto; scrollbar-width: none; display: flex; justify-content: center; align-items: center;">
+    <a href="https://drive.google.com/file/d/1YECk0tDhlc55GGabWbFP5P_wAJrRu0Mc/view?usp=sharing" target="_blank"
+       style="display: flex; align-items: center; justify-content: center; text-decoration: none; background: #ffd700cc; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; color: white; box-shadow: 0 2px 8px #000a; transition: background 0.3s ease;">
+      <i class="fas fa-eye" style="margin-right: 0.6rem; font-size: 24px;"></i>
+       View My Resume
+    </a>
+  </div>
+`,
       },
     };
 
