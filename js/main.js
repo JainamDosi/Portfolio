@@ -300,3 +300,52 @@ document.addEventListener("DOMContentLoaded", () => {
     gameLoop();
   });
 });
+
+let touchStartX = 0;
+let touchStartY = 0;
+const minSwipeDist = 30; // Minimum px for swipe
+
+document.addEventListener(
+  "touchstart",
+  function (e) {
+    if (e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  },
+  { passive: true }
+);
+
+document.addEventListener(
+  "touchend",
+  function (e) {
+    if (e.changedTouches.length === 1) {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > minSwipeDist) {
+        // Horizontal swipe
+        if (dx > 0) {
+          window.dispatchEvent(
+            new KeyboardEvent("keydown", { key: "ArrowRight" })
+          );
+        } else {
+          window.dispatchEvent(
+            new KeyboardEvent("keydown", { key: "ArrowLeft" })
+          );
+        }
+      } else if (Math.abs(dy) > minSwipeDist) {
+        // Vertical swipe
+        if (dy > 0) {
+          window.dispatchEvent(
+            new KeyboardEvent("keydown", { key: "ArrowDown" })
+          );
+        } else {
+          window.dispatchEvent(
+            new KeyboardEvent("keydown", { key: "ArrowUp" })
+          );
+        }
+      }
+    }
+  },
+  { passive: true }
+);
