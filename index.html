@@ -14,19 +14,26 @@
     <link rel="stylesheet" href="styles/game.css">
 </head>
 <body>
-    
-    <div id="game-container" class="game-container">
-        
-        <br>
-        <div id="score-board" class="score">SCORE: 0</div>
-        <canvas id="pacmanCanvas"></canvas>
-        <div class="instructions">Use Arrow Keys to Move. Visit Ghosts to Explore Sections.</div>
-        <nav class="floating-navbar hidden">
+    <div class="arrow-keys-hint">
+        <div class="arrow-key up"><i class="fas fa-arrow-up"></i></div>
+        <div class="arrow-key-row">
+            <div class="arrow-key left"><i class="fas fa-arrow-left"></i></div>
+            <div class="arrow-key down"><i class="fas fa-arrow-down"></i></div>
+            <div class="arrow-key right"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <p> Use arrow keys to navigate </p>
+    </div>
+    <nav class="floating-navbar hidden">
             <a href="#" class="nav-link" data-section="about" data-tooltip="About Me"><i class="fas fa-user"></i></a>
             <a href="#" class="nav-link" data-section="projects" data-tooltip="Projects"><i class="fas fa-code"></i></a>
             <a href="#" class="nav-link" data-section="contact" data-tooltip="Contact"><i class="fas fa-envelope"></i></a>
             <a href="#" class="nav-link" data-section="resume" data-tooltip="Resume"><i class="fas fa-file-alt"></i></a>
         </nav>
+    <div id="game-container" class="game-container">
+        <br>
+        <div id="score-board" class="score">SCORE: 0</div>
+        <canvas id="pacmanCanvas"></canvas>
+        <div class="instructions">Use Arrow Keys to Move. Visit Ghosts to Explore Sections.</div>   
     </div>
 
     <div id="portfolio-modal" class="modal-overlay hidden">
