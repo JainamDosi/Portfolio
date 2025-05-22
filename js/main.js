@@ -27,12 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
       about: {
         title: "About Me",
         body: `
-      <div style="max-height: 20rem; overflow-y: auto; scrollbar-width: none;">
-        <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+    <div style="max-height: 20rem; overflow-y: auto; scrollbar-width: none;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 200px;">
           <h2 style="margin: 0 0 0.5rem 0;">Hey there! 👋</h2>
           <p style="margin: 0;">I'm a third-year B.Tech student at IIT Bombay with an interest in AI/ML, web development, and problem-solving. I enjoy working on full-stack projects and exploring machine learning and deep learning.</p>
-          <p>Hobbies: Gaming 🎮, Photography 📷, and Reading Sci-fi 📚</p>
         </div>
         <div style="flex-shrink: 0;">
           <img src="me.png" alt="My Photo"
@@ -111,8 +110,145 @@ document.addEventListener("DOMContentLoaded", () => {
   `,
       },
       projects: {
-        title: "Projects",
-        body: "<p>Here are some projects I've built: Pac-Man Clone, React App, etc.</p>",
+        title: "My Projects",
+        body: `
+<div style="max-height: 15rem; overflow-y: auto; scrollbar-width: none; padding-right: 0.5rem; background: #0d0d0d;">
+  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+
+    <!-- Project Alpha -->
+    <div style="
+      background: rgba(255, 255, 255, 0.08); 
+      backdrop-filter: blur(12px) saturate(160%);
+      -webkit-backdrop-filter: blur(12px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.15); 
+      border-radius: 0.6rem; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+      padding: 0.75rem; 
+      color: #e0e0e0; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 0.8rem; 
+      transition: transform 0.2s ease;
+      transform-origin: center center;
+      cursor: pointer;
+    " 
+    onmouseover="this.style.transform='scale(1.001)'" 
+    onmouseout="this.style.transform='scale(1)'">
+      
+      <h3 style="font-weight: 600; font-size: 0.95rem; margin: 0;">Real Time Chat App : Talkie🎤</h3>
+      
+      <p style="
+        font-size: 0.75rem; 
+        margin: 0; 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 0.8rem;">
+        <span style="border: 1.8px solid #4db33d; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">MongoDB</span>
+        <span style="border: 1.8px solid #ffffff; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">Express.js</span>
+        <span style="border: 1.8px solid #61dafb; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">React</span>
+        <span style="border: 1.8px solid #3c873a; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">Node.js</span>
+        <span style="border: 1.8px solid #ffffff; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">Socket.IO</span>
+      </p>
+      
+      <div style="display: flex; gap: 0.5rem; justify-content: flex-start; margin: 0;">
+        <a href="https://github.com/JainamDosi/Chat_MERN" target="_blank" title="GitHub">
+          <i class="fab fa-github" style="margin-right: 0.5rem; color: #90EE90;"></i>
+        </a>
+        <a href="https://mern-chat-0rcb.onrender.com/login" target="_blank" title="Live Site">
+          <i class="fas fa-external-link-alt" style="color: #ccc;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Project Beta -->
+    <div style="
+      background: rgba(255, 255, 255, 0.08); 
+      backdrop-filter: blur(12px) saturate(160%);
+      -webkit-backdrop-filter: blur(12px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.15); 
+      border-radius: 0.6rem; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+      padding: 0.75rem; 
+      color: #e0e0e0; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 0.8rem; 
+      transition: transform 0.2s ease;
+      transform-origin: center center;
+      cursor: pointer;
+    " 
+    onmouseover="this.style.transform='scale(1.001)'" 
+    onmouseout="this.style.transform='scale(1)'">
+      
+      <h3 style="font-weight: 600; font-size: 0.95rem; margin: 0;">JEE mock test simulation</h3>
+      
+      <p style="
+        font-size: 0.75rem; 
+        margin: 0; 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 0.4rem;">
+        <span style="border: 2px solid #4db33d; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">MongoDB</span>
+        <span style="border: 2px solid #ffffff; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">Express.js</span>
+        <span style="border: 2px solid #61dafb; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">React</span>
+        <span style="border: 2px solid #3c873a; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">Node.js</span>
+      </p>
+      
+      <div style="display: flex; gap: 0.5rem; justify-content: flex-start; margin: 0;">
+        <a href="https://github.com/JainamDosi/Project_NSS" target="_blank" title="GitHub">
+          <i class="fab fa-github" style="margin-right: 0.5rem; color: #90EE90;"></i> 
+        </a>
+      </div>
+    </div>
+
+    <!-- Project Gamma -->
+    <div style="
+      background: rgba(255, 255, 255, 0.08); 
+      backdrop-filter: blur(12px) saturate(160%);
+      -webkit-backdrop-filter: blur(12px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.15); 
+      border-radius: 0.6rem; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+      padding: 0.75rem; 
+      color: #e0e0e0; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 0.8rem; 
+      transition: transform 0.2s ease;
+      transform-origin: center center;
+      cursor: pointer;
+    " 
+    onmouseover="this.style.transform='scale(1.001)'" 
+    onmouseout="this.style.transform='scale(1)'">
+      
+      <h3 style="font-weight: 600; font-size: 0.95rem; margin: 0;">Tech-Team website</h3>
+      
+      <p style="
+        font-size: 0.75rem; 
+        margin: 0; 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 0.3rem;">
+        <span style="border: 2px solid #61dafb; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">React</span>
+        <span style="border: 2px solid #764abc; border-radius: 9999px; padding: 0.2rem 0.5rem; background:black;">Tailwind</span>
+      </p>
+      
+      <div style="display: flex; gap: 0.5rem; justify-content: flex-start; margin: 0;">
+        <a href="https://github.com/JainamDosi/CHEMECA_IITB" target="_blank" title="GitHub">
+          <i class="fab fa-github" style="margin-right: 0.5rem; color: #ffffff;"></i>   
+        </a>
+        <a href="https://chemecaiitb.github.io/ChemEca/#/Home" target="_blank" title="Live Site">
+          <i class="fas fa-external-link-alt" style="color: #ccc;"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+`,
       },
       contact: {
         title: "Get In Touch!",

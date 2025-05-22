@@ -47,10 +47,10 @@ export const sectionContent = {
       </p>
       
       <div style="display: flex; gap: 0.5rem; justify-content: flex-start; margin: 0;">
-        <a href="https://github.com/yourusername/project-alpha" target="_blank" title="GitHub">
+        <a href="https://github.com/JainamDosi/Chat_MERN" target="_blank" title="GitHub">
           <i class="fab fa-github" style="margin-right: 0.5rem; color: #90EE90;"></i>
         </a>
-        <a href="https://yourliveprojectlink.com" target="_blank" title="Live Site">
+        <a href="https://mern-chat-0rcb.onrender.com/login" target="_blank" title="Live Site">
           <i class="fas fa-external-link-alt" style="color: #ccc;"></i>
         </a>
       </div>
@@ -92,7 +92,7 @@ export const sectionContent = {
       </p>
       
       <div style="display: flex; gap: 0.5rem; justify-content: flex-start; margin: 0;">
-        <a href="https://github.com/yourusername/project-beta" target="_blank" title="GitHub">
+        <a href="https://github.com/JainamDosi/Project_NSS" target="_blank" title="GitHub">
           <i class="fab fa-github" style="margin-right: 0.5rem; color: #90EE90;"></i> 
         </a>
       </div>
@@ -132,10 +132,10 @@ export const sectionContent = {
       </p>
       
       <div style="display: flex; gap: 0.5rem; justify-content: flex-start; margin: 0;">
-        <a href="https://github.com/yourusername/portfolio-site" target="_blank" title="GitHub">
+        <a href="https://github.com/JainamDosi/CHEMECA_IITB" target="_blank" title="GitHub">
           <i class="fab fa-github" style="margin-right: 0.5rem; color: #ffffff;"></i>   
         </a>
-        <a href="https://yourportfolio.com" target="_blank" title="Live Site">
+        <a href="https://chemecaiitb.github.io/ChemEca/#/Home" target="_blank" title="Live Site">
           <i class="fas fa-external-link-alt" style="color: #ccc;"></i>
         </a>
       </div>
@@ -153,7 +153,6 @@ export const sectionContent = {
         <div style="flex: 1; min-width: 200px;">
           <h2 style="margin: 0 0 0.5rem 0;">Hey there! 👋</h2>
           <p style="margin: 0;">I'm a third-year B.Tech student at IIT Bombay with an interest in AI/ML, web development, and problem-solving. I enjoy working on full-stack projects and exploring machine learning and deep learning.</p>
-          <p>Hobbies: Gaming 🎮, Photography 📷, and Reading Sci-fi 📚</p>
         </div>
         <div style="flex-shrink: 0;">
           <img src="me.png" alt="My Photo"
