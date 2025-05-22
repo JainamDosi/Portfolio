@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+    
+    <div id="game-container" class="game-container">
+        
+        <br>
+        <div id="score-board" class="score">SCORE: 0</div>
+        <canvas id="pacmanCanvas"></canvas>
+        <div class="instructions">Use Arrow Keys to Move. Visit Ghosts to Explore Sections.</div>
+        <nav class="floating-navbar hidden">
+            <a href="#" class="nav-link" data-section="about" data-tooltip="About Me"><i class="fas fa-user"></i></a>
+            <a href="#" class="nav-link" data-section="projects" data-tooltip="Projects"><i class="fas fa-code"></i></a>
+            <a href="#" class="nav-link" data-section="contact" data-tooltip="Contact"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="nav-link" data-section="resume" data-tooltip="Resume"><i class="fas fa-file-alt"></i></a>
+        </nav>
+    </div>
+
+    <div id="portfolio-modal" class="modal-overlay hidden">
+        <div class="modal">
+            <h2 id="modal-title" class="modal-title">Section Title</h2>
+            <div id="modal-body" class="modal-body"></div>
+            <button id="modal-close-btn" class="modal-close-btn" style="font-family: Tektur;">Back to Game</button>
+        </div>
+    </div>
+
+    <div id="start-screen" class="start-screen">
+        <p>Hello Visitor 👋 !</p>
+        <p>Navigate my portfolio in Pac-Man style!</p>
+        <button id="start-button" style="font-family:Tektur">Start Game</button>
+    </div>
+    
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
