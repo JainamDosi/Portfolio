@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", () => {
         title: "Resume",
         body: `
   <div style="max-height:15rem; overflow-y: auto; scrollbar-width: none; display: flex; justify-content: center; align-items: center;">
-    <a href="https://drive.google.com/file/d/1YECk0tDhlc55GGabWbFP5P_wAJrRu0Mc/view?usp=sharing" target="_blank"
+    <a href="https://drive.google.com/file/d/1DxSymkoPor7lZnDHxR-Mg5xXHID8Ndvl/view?usp=sharing" target="_blank"
        style="display: flex; align-items: center; justify-content: center; text-decoration: none; background: #ffd700cc; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; color: white; box-shadow: 0 2px 8px #000a; transition: background 0.3s ease;">
       <i class="fas fa-eye" style="margin-right: 0.6rem; font-size: 24px;"></i>
        View My Resume
@@ -299,53 +299,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initGame();
     gameLoop();
   });
-});
 
-let touchStartX = 0;
-let touchStartY = 0;
-const minSwipeDist = 30; // Minimum px for swipe
-
-document.addEventListener(
-  "touchstart",
-  function (e) {
-    if (e.touches.length === 1) {
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-    }
-  },
-  { passive: true }
-);
-
-document.addEventListener(
-  "touchend",
-  function (e) {
-    if (e.changedTouches.length === 1) {
-      const dx = e.changedTouches[0].clientX - touchStartX;
-      const dy = e.changedTouches[0].clientY - touchStartY;
-      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > minSwipeDist) {
-        // Horizontal swipe
-        if (dx > 0) {
-          window.dispatchEvent(
-            new KeyboardEvent("keydown", { key: "ArrowRight" })
-          );
-        } else {
-          window.dispatchEvent(
-            new KeyboardEvent("keydown", { key: "ArrowLeft" })
-          );
-        }
-      } else if (Math.abs(dy) > minSwipeDist) {
-        // Vertical swipe
-        if (dy > 0) {
-          window.dispatchEvent(
-            new KeyboardEvent("keydown", { key: "ArrowDown" })
-          );
-        } else {
-          window.dispatchEvent(
-            new KeyboardEvent("keydown", { key: "ArrowUp" })
-          );
-        }
-      }
-    }
-  },
-  { passive: true }
-);
+  });
